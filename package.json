@@ -1,0 +1,40 @@
+{
+  "name": "rfuncs",
+  "version": "0.1.0",
+  "description": "Functional tools for Javascript",
+  "keywords": [
+    "es2015",
+    "es5",
+    "es6",
+    "node",
+    "npm",
+    "package",
+    "functional",
+    "functions"
+  ],
+  "license": "WTFPL",
+  "author": "Riccardo Di Virgilio <riccardodivirgilio@gmail.com>",
+  "main": "dist/index.js",
+  "repository": "riccardodivirgilio/rfuncs",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "coverage": "nyc --reporter=lcov --reporter=text npm test",
+    "prepublish": "npm test"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "babel-runtime": "^6.11.6",
+    "core-js": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-latest-minimal": "^1.1.2",
+    "babel-register": "^6.16.3",
+    "chai": "^4.0.0",
+    "eslint": "^4.1.0",
+    "mocha": "^3.1.2",
+    "nyc": "^11.0.0"
+  }
+}
