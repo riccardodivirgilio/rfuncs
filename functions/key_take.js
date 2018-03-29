@@ -6,7 +6,7 @@ export default function key_take(data, to_take, default_value = undefined) {
     if (is_null(to_take)) {
         return data
     }
-    let result = {}
+    const result = {}
     scan(
         k => {
             if (data[k] !== undefined){

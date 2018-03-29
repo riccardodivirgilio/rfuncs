@@ -1,26 +1,25 @@
 
-import key_take  from './key_take'
 import to_array  from './to_array'
-import keys      from './keys'
 import is_null   from './is_null'
+import contains  from './contains'
 import scan      from './scan'
 
 export default function key_drop(data, to_drop) {
 
-    if (is_null(keys)) {
+    if (is_null(to_drop)) {
         return data
     }
 
-    let to_take = keys(data)
-
+    const keys   = to_array(to_drop)
+    const result = {}
     scan(
-        key => {
-            const index = to_take.indexOf(key)
-            if (index > -1) {
-                to_take.splice(index, 1)
+        (value, key) => {
+            if (! contains(keys, key)) {
+                result[key] = value
             }
         },
-        to_drop
+        data
     )
-    return key_take(data, to_take)
+    return result
+
 }
