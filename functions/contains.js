@@ -1,9 +1,10 @@
 
-import is_array from './is_array'
+import to_array  from './to_array'
+import is_object from './is_object'
 
 export default function contains(iterable, element) {
-    if (is_array(iterable)) {
-        return iterable.indexOf(element) > -1
+    if (is_object(iterable)) {
+        return element in iterable
     }
-    return element in iterable
+    return to_array(iterable).indexOf(element) > -1
 }

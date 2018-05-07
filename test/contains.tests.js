@@ -8,4 +8,6 @@ it("contains", () => {
 
   compare.equal(contains({'a':1, 'b':2}, 'a'), true)
   compare.equal(contains({'a':1, 'b':2}, 'c'), false)
+
+  compare.equal(contains(1, 1), true)
 })
