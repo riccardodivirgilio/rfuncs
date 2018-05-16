@@ -1,7 +1,7 @@
 
 import to_array from '../functions/to_array'
 import compare  from './utils/compare'
-import make_iterator from './utils/make_iterator'
+import test_iterator from './utils/test_iterator'
 
 
 it("to_array", () => {
@@ -11,7 +11,7 @@ it("to_array", () => {
   compare.as_json(to_array([0, 1, 2, [3, 4], {'a': 5}]), [0, 1, 2, [3, 4], {'a': 5}])
   compare.as_json(to_array({'a': 1, 'b': 2, 'c': [3, 4], 'd': {'a': 5}}), [1, 2, [3, 4], {'a': 5}])
 
-  compare.as_json(to_array(make_iterator()), [1, 2])
+  compare.as_json(to_array(test_iterator()), [1, 2])
 })
 
 it("to_array vargs", () => {
