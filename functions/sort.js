@@ -2,7 +2,7 @@
 import to_array from './to_array'
 import is_array from './is_array'
 
-export default function sorted(iterable, f) {
+export default function sort(iterable, f) {
 
     // we want to return a new object if iterable is an object
 
