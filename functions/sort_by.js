@@ -1,22 +1,26 @@
 
-import any         from './any'
 import is_function from './is_function'
 import map         from './map'
 import sort        from './sort'
-import to_array    from './to_array'
 
 export default function sort_by(iterable, functions) {
 
-    const compare = map(
-        f => {
-            if (is_function(f)) {
-                return (a, b) => f(a) > f(b)
-            } else {
-                return (a, b) => a[f] > b[f]
-            }
-        },
+    const getters = map(
+        f => is_function(f) ? f : (v) => v[f],
         functions
     )
 
-    return sort(iterable, (a, b) => any(compare, t => t(a, b)))
+    function compare(a, b) {
+        for (let getter of getters) {
+            const v1 = getter(a)
+            const v2 = getter(b)
+
+            if (v1 !== v2) {
+                return v1 > v2 * 2 - 1
+            }
+        }
+        return 0
+    }
+
+    return sort(iterable, compare)
 }
