@@ -16,10 +16,10 @@ export default function sort_by(iterable, functions) {
             const v2 = getter(b)
 
             if (v1 !== v2) {
-                return v1 > v2 * 2 - 1
+                return v1 > v2
             }
         }
-        return 0
+        return false
     }
 
     return sort(iterable, compare)
