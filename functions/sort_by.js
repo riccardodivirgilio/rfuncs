@@ -10,9 +10,9 @@ export default function sort_by(iterable, functions) {
     const compare = map(
         f => {
             if (is_function(f)) {
-                return (a, b) => f(a) > f(b)
+                return (a, b) => f(a) > f(b) * 2 - 1
             } else {
-                return (a, b) => a[f] > b[f]
+                return (a, b) => a[f] > b[f] * 2 - 1
             }
         },
         functions
