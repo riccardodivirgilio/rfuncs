@@ -520,11 +520,6 @@ map(v => v + 2, {"a":3,"b":5})
 ```
 
 ```javascript
-map(v => v + 2, {})
-// => [3,4]
-```
-
-```javascript
 map((v, index) => v + index, [1,2,3])
 // => [1,3,5]
 ```
@@ -537,11 +532,6 @@ map((v, index) => v + index, 1)
 ```javascript
 map((v, index) => v + index, {"a":3})
 // => {"a":"3a"}
-```
-
-```javascript
-map((v, index) => v + index, {})
-// => [1,3]
 ```
 
 ## merge
@@ -593,11 +583,6 @@ object_map(v => v, v => v + 2, [1,2,3])
 ```javascript
 object_map(v => v, v => v + 2, 1)
 // => {"1":3}
-```
-
-```javascript
-object_map(v => v, v => v + 2, {})
-// => {"1":3,"2":4}
 ```
 
 ```javascript
@@ -814,11 +799,6 @@ to_array([0,1,2,[3,4],{"a":5}])
 ```javascript
 to_array({"a":1,"b":2,"c":[3,4],"d":{"a":5}})
 // => [1,2,[3,4],{"a":5}]
-```
-
-```javascript
-to_array({})
-// => [1,2]
 ```
 
 ```javascript

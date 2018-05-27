@@ -11,7 +11,7 @@ export default {
       compare(to_array([0, 1, 2, [3, 4], {'a': 5}]), [0, 1, 2, [3, 4], {'a': 5}])
       compare(to_array({'a': 1, 'b': 2, 'c': [3, 4], 'd': {'a': 5}}), [1, 2, [3, 4], {'a': 5}])    
 
-      compare(to_array(test_iterator()), [1, 2])
+      
 
     }
   }, {
@@ -22,6 +22,14 @@ export default {
       compare(to_array('', 0, 1, 2, 3), ['', 0, 1, 2, 3])
       compare(to_array('', 0, 1, [2, 3], 4), ['', 0, 1, 2, 3, 4])
       compare(to_array('', 0, 1, [2, 3], {'a': 4, 'b': 5}), ['', 0, 1, 2, 3, 4, 5])
+
+    }    
+  }, {
+    name: 'to_array iterator',
+    docs_skip: true,
+    tests: (to_array, compare) => {
+
+      compare(to_array(test_iterator()), [1, 2])
 
     }    
   }]
