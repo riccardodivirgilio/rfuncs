@@ -195,8 +195,8 @@ contains(1, 1)
 
 ## filter
 
-*filter(array, crit)*
- - picks out all elements xₑ of array for which crit(xₑ, e) is True
+*filter(data, crit)*
+ - picks out all elements xₑ of data for which crit(data[e], e) is True
 
 ```javascript
 filter(v => v < 3, [1,2,3])
@@ -433,13 +433,6 @@ key_drop({"a":"b","c":"d","e":"f","k":"p"})
 // => {"a":"b","c":"d","e":"f","k":"p"}
 ```
 
-## keys
-
-```javascript
-keys({"a":"b","c":"d","e":"f"})
-// => ["a","c","e"]
-```
-
 ## key_take
 
 ```javascript
@@ -470,6 +463,13 @@ key_take({"a":"b","c":"d","e":"f"}, ["a","c","z","j"], 3)
 ```javascript
 key_take({"a":"b","c":"d","e":"f"}, ["a","c","z","j"], null)
 // => {"a":"b","c":"d","z":null,"j":null}
+```
+
+## keys
+
+```javascript
+keys({"a":"b","c":"d","e":"f"})
+// => ["a","c","e"]
 ```
 
 ## last
@@ -729,38 +729,6 @@ c
 // => 
 ```
 
-## sort_by
-
-```javascript
-sort_by([4,3,10,2])
-// => [2,3,4,10]
-```
-
-```javascript
-sort_by([[2,"b"],[1,"a"]], arr => arr[0])
-// => [[1,"a"],[2,"b"]]
-```
-
-```javascript
-sort_by([[2,3],[2,1],[1,1]], [null,null])
-// => [[1,1],[2,1],[2,3]]
-```
-
-```javascript
-sort_by([[2,3],[2,1],[1,1]], [0,1])
-// => [[1,1],[2,1],[2,3]]
-```
-
-```javascript
-sort_by([{"a":2},{"a":3},{"a":1}], "a")
-// => [{"a":1},{"a":2},{"a":3}]
-```
-
-```javascript
-sort_by([{"a":2,"b":3},{"a":2,"b":1},{"a":1,"b":1}], ["a","b"])
-// => [{"a":1,"b":1},{"a":2,"b":1},{"a":2,"b":3}]
-```
-
 ## sort
 
 ```javascript
@@ -801,6 +769,38 @@ sort({"a":3,"b":1,"c":2}, (a, b) => a < b)
 ```javascript
 
 // => {"a":3,"b":1,"c":2}
+```
+
+## sort_by
+
+```javascript
+sort_by([4,3,10,2])
+// => [2,3,4,10]
+```
+
+```javascript
+sort_by([[2,"b"],[1,"a"]], arr => arr[0])
+// => [[1,"a"],[2,"b"]]
+```
+
+```javascript
+sort_by([[2,3],[2,1],[1,1]], [null,null])
+// => [[1,1],[2,1],[2,3]]
+```
+
+```javascript
+sort_by([[2,3],[2,1],[1,1]], [0,1])
+// => [[1,1],[2,1],[2,3]]
+```
+
+```javascript
+sort_by([{"a":2},{"a":3},{"a":1}], "a")
+// => [{"a":1},{"a":2},{"a":3}]
+```
+
+```javascript
+sort_by([{"a":2,"b":3},{"a":2,"b":1},{"a":1,"b":1}], ["a","b"])
+// => [{"a":1,"b":1},{"a":2,"b":1},{"a":2,"b":3}]
 ```
 
 ## to_array
