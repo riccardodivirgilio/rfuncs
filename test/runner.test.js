@@ -9,7 +9,11 @@ const runner = function() {
             _.scan(
                 section => it(
                     section.name || name, 
-                    () => section.tests(_[name], compare.as_json)
+                    () => {
+                        if (section.tests) {
+                            section.tests(_[name], compare.as_json)
+                        }
+                    }
                 ),
                 spec.sections
             )
