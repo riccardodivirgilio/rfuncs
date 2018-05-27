@@ -7,6 +7,7 @@ A collection of amazing functions:
 {{#usage}}
 *{{ line }}*
  - {{ description }}
+
 {{/usage}}
 
 {{description}}

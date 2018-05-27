@@ -5,6 +5,7 @@ A collection of amazing functions:
 ## all
 *all(array)*
  - Returns True if all values in the array are true
+
 *all(array, func)*
  - Returns True if all values in the array are true when applied to func
 
@@ -57,6 +58,7 @@ all([2,4], i => i <= 4)
 ## any
 *any(array)*
  - Returns True if at least one in the values in the array is true
+
 *any(array, func)*
  - Returns True if at least one in the values in the array is true when applied to func
 
