@@ -1,5 +1,6 @@
 
 export default {
+    description: 'Returns True if all values in the array are true.',
     sections: [{
         tests: (all, compare) => {
 
