@@ -1,9 +1,9 @@
-Welcome to RFUNCS!
+# RFUNCS
 
 A collection of amazing functions:
 
 {{#functions}}
-# {{name}}
+## {{name}}
 {{description}}
 {{#sections}}
 {{#tests}}
