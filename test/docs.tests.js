@@ -9,6 +9,8 @@ import merge       from '../functions/merge'
 import values      from '../functions/values' 
 import is_function from '../functions/is_function' 
 
+import template_to_file from './utils/template_to_file' 
+
 function serialize(arg){
     if (is_function(arg)) {
         return arg.toString()
@@ -60,8 +62,8 @@ const context = {
     )
 };
 
-const t = fs.readFileSync(path.join(__dirname, '..', 'readme.template.md'), 'utf8')
- 
-const output = template.render(t, context).replace(/\n[\n]+/g, '\n\n');
-
-fs.writeFileSync(path.join(__dirname, '..', 'readme.md'), output)
+template_to_file(
+    path.join(__dirname, '..', 'readme.template.md'),
+    path.join(__dirname, '..', 'readme.md'),
+    context
+)
