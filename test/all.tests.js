@@ -12,15 +12,16 @@ import template_to_file from './utils/template_to_file'
 
 
 function find(folder) {
-    return sort(
-        map(
-            name => path.basename(name, '.js'),
+    return map(
+            name => '' + path.basename(name, '.js'),
             filter(
                 name => path.extname(name) == '.js',
                 fs.readdirSync(path.join(__dirname, '..', folder))
             )
+        ).sort(
+            (a, b) => (a < b) ? -1 : 1
         )
-    )
+
 }
 
 const t = fs.readFileSync(path.join(__dirname, '..', 'all.template.js'), 'utf8')
@@ -31,8 +32,7 @@ scan(
         path.join(__dirname, '..', 'all', name + '.js'),
         {'names': find(name), 'path': '../' + name}
     ),
-    //['functions', 'spec']
-    []
+    ['functions', 'spec']
 )
 
 
