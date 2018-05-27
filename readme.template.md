@@ -7,7 +7,7 @@ A collection of amazing functions:
 {{description}}
 {{#sections}}
 {{#tests}}
-```
+```javascript
 {{ &test }}
 // => {{ &result }}
 ```
