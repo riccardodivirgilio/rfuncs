@@ -1,4 +1,7 @@
 export default {
+  usage: [
+      {line: 'composition(f, g, h)(1)', description: 'returns f(g(h(1)))'},
+  ],
   sections: [{
     tests: (composition, compare) => {
 

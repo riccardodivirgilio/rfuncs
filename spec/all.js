@@ -1,5 +1,9 @@
 
 export default {
+    usage: [
+        {line: 'all(array)', description: 'Returns True if all values in the array are true'},
+        {line: 'all(array, func)', description: 'Returns True if all values in the array are true when applied to func'}
+    ],
     description: 'Returns True if all values in the array are true.',
     sections: [{
         tests: (all, compare) => {

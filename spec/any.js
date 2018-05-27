@@ -1,6 +1,10 @@
 
 
 export default {
+  usage: [
+      {line: 'any(array)', description: 'Returns True if at least one in the values in the array is true'},
+      {line: 'any(array, func)', description: 'Returns True if at least one in the values in the array is true when applied to func'}
+  ],
   sections: [{
     tests: (any, compare) => {
 
