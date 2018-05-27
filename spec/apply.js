@@ -1,9 +1,9 @@
 
 export default {
-  usage: [
-      {line: 'apply(func, array)', description: 'returns func(*array)'},
-  ],
   sections: [{
+    usage: [
+      {line: 'apply(func, array)', description: 'returns func(*array)'},
+    ],
     tests: (apply, compare) => {
 
       compare(apply((a) => a + 2, 1), 3)

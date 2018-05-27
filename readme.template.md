@@ -4,14 +4,14 @@ A collection of amazing functions:
 
 {{#functions}}
 ## {{name}}
+{{description}}
+{{#sections}}
 {{#usage}}
 *{{ line }}*
  - {{ description }}
 
 {{/usage}}
 
-{{description}}
-{{#sections}}
 {{#tests}}
 ```javascript
 {{ &test }}

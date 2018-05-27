@@ -3,11 +3,9 @@
 A collection of amazing functions:
 
 ## all
+
 *all(array)*
  - Returns True if all values in the array are true
-
-*all(array, func)*
- - Returns True if all values in the array are true when applied to func
 
 ```javascript
 all()
@@ -34,6 +32,9 @@ all([true,false])
 // => false
 ```
 
+*all(array, func)*
+ - Returns True if all values in the array are true when applied to func
+
 ```javascript
 all(4, i => i <= 4)
 // => true
@@ -55,11 +56,9 @@ all([2,4], i => i <= 4)
 ```
 
 ## any
+
 *any(array)*
  - Returns True if at least one in the values in the array is true
-
-*any(array, func)*
- - Returns True if at least one in the values in the array is true when applied to func
 
 ```javascript
 any()
@@ -85,6 +84,9 @@ any([false,false])
 any([true,false])
 // => true
 ```
+
+*any(array, func)*
+ - Returns True if at least one in the values in the array is true when applied to func
 
 ```javascript
 any(4, i => i <= 4)
@@ -112,6 +114,7 @@ any([2,4], i => i <= 1)
 ```
 
 ## apply
+
 *apply(func, array)*
  - returns func(*array)
 
@@ -136,6 +139,7 @@ apply((a, b, c) => a + b + c, [1,2,3])
 ```
 
 ## composition
+
 *composition(f, g, h)(1)*
  - returns f(g(h(1)))
 
@@ -160,6 +164,7 @@ composition(a => a + 2, a => a * 3, a => a / 2)(4)
 ```
 
 ## contains
+
 *contains(array, value)*
  - returns True if value is contained in array
 

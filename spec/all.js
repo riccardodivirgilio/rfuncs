@@ -1,10 +1,9 @@
 
 export default {
-    usage: [
-        {line: 'all(array)', description: 'Returns True if all values in the array are true'},
-        {line: 'all(array, func)', description: 'Returns True if all values in the array are true when applied to func'}
-    ],
     sections: [{
+        usage: [
+            {line: 'all(array)', description: 'Returns True if all values in the array are true'},
+        ],
         tests: (all, compare) => {
 
             compare(all(),      true)
@@ -14,6 +13,13 @@ export default {
 
             compare(all([true, true]),    true)
             compare(all([true, false]),   false)
+
+        }
+    }, {
+        usage: [
+            {line: 'all(array, func)', description: 'Returns True if all values in the array are true when applied to func'}
+        ],
+        tests: (all, compare) => {
 
             compare(all(4, i => i <= 4),  true)
             compare(all(4, i => i >  4),  false)

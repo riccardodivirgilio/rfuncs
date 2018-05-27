@@ -1,11 +1,10 @@
 
 
 export default {
-  usage: [
-      {line: 'any(array)', description: 'Returns True if at least one in the values in the array is true'},
-      {line: 'any(array, func)', description: 'Returns True if at least one in the values in the array is true when applied to func'}
-  ],
   sections: [{
+    usage: [
+        {line: 'any(array)', description: 'Returns True if at least one in the values in the array is true'},
+    ],
     tests: (any, compare) => {
 
       compare(any(),      false)
@@ -16,6 +15,12 @@ export default {
       compare(any([false, false]),  false)
       compare(any([true, false]),   true)
 
+    }
+  }, {
+    usage: [
+        {line: 'any(array, func)', description: 'Returns True if at least one in the values in the array is true when applied to func'}
+    ],
+    tests: (any, compare) => {
 
       compare(any(4, i => i <= 4),  true)
       compare(any(4, i => i >  4),  false)

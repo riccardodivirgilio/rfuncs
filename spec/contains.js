@@ -1,8 +1,8 @@
 export default {
-  usage: [
-    {line: 'contains(array, value)', description: 'returns True if value is contained in array'}
-  ],
   sections: [{
+    usage: [
+      {line: 'contains(array, value)', description: 'returns True if value is contained in array'}
+    ],
     tests: (contains, compare) => {
 
       compare(contains([1, 2, 3], 2), true)
