@@ -2,7 +2,7 @@ Welcome to RFUNCS!
 
 A collection of amazing functions:
 
-#all
+# all
 Returns True if all values in the array are true.
 ```
 all()
@@ -49,7 +49,7 @@ all([2,4], i => i <= 4)
 // => true
 ```
 
-#any
+# any
 
 ```
 any()
@@ -101,7 +101,7 @@ any([2,4], i => i <= 1)
 // => false
 ```
 
-#apply
+# apply
 
 ```
 apply(a => a + 2, 1)
@@ -123,7 +123,7 @@ apply((a, b, c) => a + b + c, [1,2,3])
 // => 6
 ```
 
-#composition
+# composition
 
 ```
 composition()(4)
@@ -145,7 +145,7 @@ composition(a => a + 2, a => a * 3, a => a / 2)(4)
 // => 9
 ```
 
-#contains
+# contains
 
 ```
 contains([1,2,3], 2)
@@ -172,7 +172,7 @@ contains(1, 1)
 // => true
 ```
 
-#filter
+# filter
 
 ```
 filter(v => v < 3, [1,2,3])
@@ -214,7 +214,7 @@ filter((v, index) => v == index, {"a":"a","b":"c"})
 // => {"a":"a"}
 ```
 
-#first
+# first
 
 ```
 first(1)
@@ -231,7 +231,7 @@ first({"a":1,"b":2})
 // => 1
 ```
 
-#is_array
+# is_array
 
 ```
 is_array("a")
@@ -263,7 +263,7 @@ is_array()
 // => false
 ```
 
-#is_function
+# is_function
 
 ```
 is_function("a")
@@ -310,7 +310,7 @@ is_function(function () {})
 // => true
 ```
 
-#is_iterator
+# is_iterator
 
 ```
 is_iterator("a")
@@ -327,7 +327,7 @@ is_iterator({})
 // => true
 ```
 
-#is_null
+# is_null
 
 ```
 is_null("a")
@@ -359,7 +359,7 @@ is_null()
 // => true
 ```
 
-#is_object
+# is_object
 
 ```
 is_object("a")
@@ -391,7 +391,7 @@ is_object()
 // => false
 ```
 
-#key_drop
+# key_drop
 
 ```
 key_drop({"a":"b","c":"d","e":"f","k":"p"}, "a")
@@ -413,14 +413,14 @@ key_drop({"a":"b","c":"d","e":"f","k":"p"})
 // => {"a":"b","c":"d","e":"f","k":"p"}
 ```
 
-#keys
+# keys
 
 ```
 keys({"a":"b","c":"d","e":"f"})
 // => ["a","c","e"]
 ```
 
-#key_take
+# key_take
 
 ```
 key_take({"a":"b","c":"d","e":"f"}, "a")
@@ -452,7 +452,7 @@ key_take({"a":"b","c":"d","e":"f"}, ["a","c","z","j"], null)
 // => {"a":"b","c":"d","z":null,"j":null}
 ```
 
-#last
+# last
 
 ```
 last(1)
@@ -469,7 +469,7 @@ last({"a":1,"b":2})
 // => 2
 ```
 
-#length
+# length
 
 ```
 length()
@@ -506,7 +506,7 @@ length({"a":2,"b":3})
 // => 2
 ```
 
-#map
+# map
 
 ```
 map(v => v + 2, [1,2,3])
@@ -548,7 +548,7 @@ map((v, index) => v + index, {})
 // => [1,3]
 ```
 
-#merge
+# merge
 
 ```
 merge()
@@ -570,7 +570,7 @@ merge({"a":1}, {"b":2}, {"c":3})
 // => {"a":1,"b":2,"c":3}
 ```
 
-#nest
+# nest
 
 ```
 nest(s => s + "b", "a", 0)
@@ -587,7 +587,7 @@ nest(s => s + "b", "a", 5)
 // => "abbbbb"
 ```
 
-#object_map
+# object_map
 
 ```
 object_map(v => v, v => v + 2, [1,2,3])
@@ -619,7 +619,7 @@ object_map((v, i) => i + 1, (v, i) => v + 2, {})
 // => {"1":3,"2":4}
 ```
 
-#part
+# part
 
 ```
 part({"person":{"pk.0":{"pk":"pk.0","full_name":"Deanna Gardner"},"pk.1":{"pk":"pk.1","full_name":"Brian Rodriguez"},"pk.2":{"pk":"pk.2","full_name":"Rebecca Burke"},"pk.3":{"pk":"pk.3","full_name":"Brian Taylor"},"pk.4":{"pk":"pk.4","full_name":"Heather Watkins"},"pk.5":{"pk":"pk.5","full_name":"Chris Villegas"},"pk.6":{"pk":"pk.6","full_name":"Danielle Henderson"},"pk.7":{"pk":"pk.7","full_name":"Matthew Ramirez"}},"transaction":{"pk.0":{"pk":"pk.0","amount":370},"pk.1":{"pk":"pk.1","amount":930},"pk.2":{"pk":"pk.2","amount":740},"pk.3":{"pk":"pk.3","amount":560}}}, "person", "pk.0", "full_name")
@@ -641,7 +641,7 @@ part({"person":{"pk.0":{"pk":"pk.0","full_name":"Deanna Gardner"},"pk.1":{"pk":"
 // => [{"pk":"pk.1","full_name":"Brian Rodriguez"},{"pk":"pk.7","full_name":"Matthew Ramirez"}]
 ```
 
-#range
+# range
 
 ```
 range(0)
@@ -673,7 +673,7 @@ range(0, 4, 2)
 // => [0,2,4]
 ```
 
-#repeat
+# repeat
 
 ```
 repeat(1)
@@ -690,7 +690,7 @@ repeat(1, 0)
 // => []
 ```
 
-#scan
+# scan
 
 ```
 
@@ -732,7 +732,7 @@ repeat(1, 0)
 // => [1,3]
 ```
 
-#sort_by
+# sort_by
 
 ```
 sort_by([4,3,10,2])
@@ -766,7 +766,7 @@ sort_by([{"a":2,"b":3},{"a":2,"b":1},{"a":1,"b":1}], ["a","b"])
 // => [{"a":1,"b":1},{"a":2,"b":1},{"a":2,"b":3}]
 ```
 
-#sort
+# sort
 
 ```
 sort([3,1,2])
@@ -808,7 +808,7 @@ sort({"a":3,"b":1,"c":2}, (a, b) => a < b)
 // => {"a":3,"b":1,"c":2}
 ```
 
-#to_array
+# to_array
 
 ```
 to_array(0)
@@ -855,7 +855,7 @@ to_array("", 0, 1, [2,3], {"a":4,"b":5})
 // => ["",0,1,2,3,4,5]
 ```
 
-#values
+# values
 
 ```
 values({"a":"b","c":"d","e":"f"})
