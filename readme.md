@@ -9,7 +9,6 @@ A collection of amazing functions:
 *all(array, func)*
  - Returns True if all values in the array are true when applied to func
 
-Returns True if all values in the array are true.
 ```javascript
 all()
 // => true
