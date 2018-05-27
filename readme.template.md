@@ -4,6 +4,11 @@ A collection of amazing functions:
 
 {{#functions}}
 ## {{name}}
+{{#usage}}
+*{{ line }}*
+ - {{ description }}
+{{/usage}}
+
 {{description}}
 {{#sections}}
 {{#tests}}
