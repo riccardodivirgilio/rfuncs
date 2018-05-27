@@ -2,7 +2,7 @@ export default {
   sections: [{
     name: 'filter',
     usage: [
-      {line: 'filter(array, crit)', description: 'picks out all elements xₑ of array for which crit(xₑ, e) is True'},
+      {line: 'filter(data, crit)', description: 'picks out all elements xₑ of data for which crit(data[e], e) is True'},
     ],
     tests: (filter, compare) => {
 
