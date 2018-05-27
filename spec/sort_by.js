@@ -1,7 +1,4 @@
 
-import first   from '../functions/first'
-import last    from '../functions/last'
-
 export default {
   sections: [{
     tests: (sort_by, compare) => {
@@ -17,7 +14,7 @@ export default {
       compare(
         sort_by(
             [[2, "b"], [1, "a"]], 
-            first
+            arr => arr[0]
         ), 
         [[1, "a"], [2, "b"]]
       )    
@@ -25,7 +22,7 @@ export default {
       compare(
         sort_by(
             [[2, 3], [2, 1], [1, 1]], 
-            [first, last]
+            [arr => arr[0], arr => arr[1]]
         ), 
         [[1, 1], [2, 1], [2, 3]]
       )    

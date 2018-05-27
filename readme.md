@@ -740,9 +740,7 @@ sort_by([4,3,10,2])
 ```
 
 ```javascript
-sort_by([[2,"b"],[1,"a"]], function first(any) {
-    return (0, _to_array2.default)(any)[0];
-})
+sort_by([[2,"b"],[1,"a"]], arr => arr[0])
 // => [[1,"a"],[2,"b"]]
 ```
 
