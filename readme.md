@@ -313,17 +313,13 @@ is_function(function () {})
 ## is_iterator
 
 ```javascript
-is_iterator("a")
+is_iterator([1, 2, 3])
 // => false
 ```
 
 ```javascript
-is_iterator(0)
-// => false
-```
-
-```javascript
-is_iterator({})
+function* iter() {yield 1}
+is_iterator(iter())
 // => true
 ```
 
@@ -693,43 +689,35 @@ repeat(1, 0)
 ## scan
 
 ```javascript
-
-// => [3,4,5]
+scan(v => console.log(a), [1, 2, 3])
+1
+2
+3
+// => 
 ```
 
 ```javascript
-
-// => [3]
+scan(v => console.log(a), {a:2, b:3, c:4})
+2
+3
+4
+// => 
 ```
 
 ```javascript
-
-// => [5,7]
+scan((v, i) => console.log(i), [1, 2, 3])
+0
+1
+2
+// => 
 ```
 
 ```javascript
-
-// => [3,4]
-```
-
-```javascript
-
-// => [1,3,5]
-```
-
-```javascript
-
-// => [1]
-```
-
-```javascript
-
-// => ["3a","2b"]
-```
-
-```javascript
-
-// => [1,3]
+scan((v, i) => console.log(i), {a:2, b:3, c:4})
+a
+b
+c
+// => 
 ```
 
 ## sort_by

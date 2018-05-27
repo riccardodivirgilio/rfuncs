@@ -30,13 +30,17 @@ function serializer(payload) {
     return res
 }
 
-function collect(name, builder) {
+function collect(name, section) {
     const results = []
-    builder(
-        serializer(name),
-        (a, b) => results.push({'test': a.payload, result: serialize(b)})
-    )
-    return results
+
+    if (! section.docs_skip && section.tests) {
+        section.tests(
+            serializer(name),
+            (a, b) => results.push({'test': a.payload, result: serialize(b), logs: []})
+        )        
+    }
+
+    return results.concat(section.examples || [])
 }
 
 const context = {
@@ -46,7 +50,7 @@ const context = {
                 spec, {
                     name: name,
                     sections: map(
-                        section => merge(section, {'tests': collect(name, section.tests)}),
+                        section => merge(section, {'tests': collect(name, section)}),
                         spec.sections
                     )
                 },

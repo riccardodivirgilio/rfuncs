@@ -9,6 +9,9 @@ A collection of amazing functions:
 {{#tests}}
 ```javascript
 {{ &test }}
+{{#logs}}
+{{.}}
+{{/logs}}
 // => {{ &result }}
 ```
 
