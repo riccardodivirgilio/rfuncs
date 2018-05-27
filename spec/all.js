@@ -2,7 +2,7 @@
 export default {
     sections: [{
         usage: [
-            {line: 'all(array)', description: 'Returns True if all values in the array are true'},
+            {line: 'all(array)', description: 'Returns `true` if all values in the array are true'},
         ],
         tests: (all, compare) => {
 
@@ -16,8 +16,9 @@ export default {
 
         }
     }, {
+        name: 'all func',
         usage: [
-            {line: 'all(array, func)', description: 'Returns True if all values in the array are true when applied to func'}
+            {line: 'all(array, func)', description: 'Returns `true` if all values in the array are true when applied to func'}
         ],
         tests: (all, compare) => {
 

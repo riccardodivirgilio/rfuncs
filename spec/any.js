@@ -3,7 +3,7 @@
 export default {
   sections: [{
     usage: [
-        {line: 'any(array)', description: 'Returns True if at least one in the values in the array is true'},
+        {line: 'any(array)', description: 'Returns `true` if at least one in the values in the array is true'},
     ],
     tests: (any, compare) => {
 
@@ -17,8 +17,9 @@ export default {
 
     }
   }, {
+    name: 'any func',
     usage: [
-        {line: 'any(array, func)', description: 'Returns True if at least one in the values in the array is true when applied to func'}
+        {line: 'any(array, func)', description: 'Returns `true` if at least one in the values in the array is true when applied to func'}
     ],
     tests: (any, compare) => {
 
