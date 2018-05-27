@@ -2,7 +2,7 @@
 export default {
   sections: [{
     usage: [
-      {line: 'apply(func, array)', description: 'returns func(*array)'},
+      {line: 'apply(f, [val₁, val₂, val₃, …])', description: 'returns f(val₁, val₂, val₃, …)'},
     ],
     tests: (apply, compare) => {
 

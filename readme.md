@@ -115,8 +115,8 @@ any([2,4], i => i <= 1)
 
 ## apply
 
-*apply(func, array)*
- - returns func(*array)
+*apply(f, [val₁, val₂, val₃, …])*
+ - returns f(val₁, val₂, val₃, …)
 
 ```javascript
 apply(a => a + 2, 1)
@@ -140,8 +140,8 @@ apply((a, b, c) => a + b + c, [1,2,3])
 
 ## composition
 
-*composition(f, g, h)(1)*
- - returns f(g(h(1)))
+*composition(f₁, f₂, f₃, …)*
+ - returns a composition of the functions f₁, f₂, f₃, …
 
 ```javascript
 composition()(4)
@@ -165,8 +165,8 @@ composition(a => a + 2, a => a * 3, a => a / 2)(4)
 
 ## contains
 
-*contains(array, value)*
- - returns True if value is contained in array
+*contains(data, value)*
+ - returns True if value is contained in data
 
 ```javascript
 contains([1,2,3], 2)
@@ -194,6 +194,9 @@ contains(1, 1)
 ```
 
 ## filter
+
+*filter(array, crit)*
+ - picks out all elements xₑ of array for which crit(xₑ, e) is True
 
 ```javascript
 filter(v => v < 3, [1,2,3])

@@ -1,6 +1,9 @@
 export default {
   sections: [{
     name: 'filter',
+    usage: [
+      {line: 'filter(array, crit)', description: 'picks out all elements xₑ of array for which crit(xₑ, e) is True'},
+    ],
     tests: (filter, compare) => {
 
       compare(filter((v) => v < 3, [1, 2, 3]), [1, 2])

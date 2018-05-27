@@ -1,7 +1,7 @@
 export default {
   sections: [{
     usage: [
-      {line: 'contains(array, value)', description: 'returns True if value is contained in array'}
+      {line: 'contains(data, value)', description: 'returns True if value is contained in data'}
     ],
     tests: (contains, compare) => {
 
