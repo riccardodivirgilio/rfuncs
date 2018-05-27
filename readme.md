@@ -5,7 +5,7 @@ A collection of amazing functions:
 ## all
 
 *all(array)*
- - Returns True if all values in the array are true
+ - Returns `true` if all values in the array are true
 
 ```javascript
 all()
@@ -33,7 +33,7 @@ all([true,false])
 ```
 
 *all(array, func)*
- - Returns True if all values in the array are true when applied to func
+ - Returns `true` if all values in the array are true when applied to func
 
 ```javascript
 all(4, i => i <= 4)
@@ -58,7 +58,7 @@ all([2,4], i => i <= 4)
 ## any
 
 *any(array)*
- - Returns True if at least one in the values in the array is true
+ - Returns `true` if at least one in the values in the array is true
 
 ```javascript
 any()
@@ -86,7 +86,7 @@ any([true,false])
 ```
 
 *any(array, func)*
- - Returns True if at least one in the values in the array is true when applied to func
+ - Returns `true` if at least one in the values in the array is true when applied to func
 
 ```javascript
 any(4, i => i <= 4)
@@ -166,7 +166,7 @@ composition(a => a + 2, a => a * 3, a => a / 2)(4)
 ## contains
 
 *contains(data, value)*
- - returns True if value is contained in data
+ - returns `true` if value is contained in data
 
 ```javascript
 contains([1,2,3], 2)

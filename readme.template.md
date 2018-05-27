@@ -7,8 +7,8 @@ A collection of amazing functions:
 {{description}}
 {{#sections}}
 {{#usage}}
-*{{ line }}*
- - {{ description }}
+*{{ &line }}*
+ - {{ &description }}
 
 {{/usage}}
 
