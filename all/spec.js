@@ -6,6 +6,7 @@ import composition from '../spec/composition'
 import contains from '../spec/contains'    
 import filter from '../spec/filter'    
 import first from '../spec/first'    
+import group_by from '../spec/group_by'    
 import is_array from '../spec/is_array'    
 import is_function from '../spec/is_function'    
 import is_iterator from '../spec/is_iterator'    
@@ -37,6 +38,7 @@ export default {
     contains,
     filter,
     first,
+    group_by,
     is_array,
     is_function,
     is_iterator,

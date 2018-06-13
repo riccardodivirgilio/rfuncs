@@ -6,6 +6,7 @@ import composition from '../functions/composition'
 import contains from '../functions/contains'    
 import filter from '../functions/filter'    
 import first from '../functions/first'    
+import group_by from '../functions/group_by'    
 import is_array from '../functions/is_array'    
 import is_function from '../functions/is_function'    
 import is_iterator from '../functions/is_iterator'    
@@ -37,6 +38,7 @@ export default {
     contains,
     filter,
     first,
+    group_by,
     is_array,
     is_function,
     is_iterator,
