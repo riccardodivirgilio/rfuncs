@@ -668,6 +668,12 @@ part({"person":{"pk.0":{"pk":"pk.0","full_name":"Deanna Gardner"},"pk.1":{"pk":"
 // => [{"pk":"pk.1","full_name":"Brian Rodriguez"},{"pk":"pk.7","full_name":"Matthew Ramirez"}]
 ```
 
+## random_choice
+
+## random_integer
+
+## random_real
+
 ## range
 
 ```javascript

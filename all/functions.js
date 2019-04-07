@@ -22,6 +22,9 @@ import merge from '../functions/merge'
 import nest from '../functions/nest'    
 import object_map from '../functions/object_map'    
 import part from '../functions/part'    
+import random_choice from '../functions/random_choice'    
+import random_integer from '../functions/random_integer'    
+import random_real from '../functions/random_real'    
 import range from '../functions/range'    
 import repeat from '../functions/repeat'    
 import scan from '../functions/scan'    
@@ -55,6 +58,9 @@ export default {
     nest,
     object_map,
     part,
+    random_choice,
+    random_integer,
+    random_real,
     range,
     repeat,
     scan,

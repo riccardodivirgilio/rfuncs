@@ -22,6 +22,9 @@ import merge from '../spec/merge'
 import nest from '../spec/nest'    
 import object_map from '../spec/object_map'    
 import part from '../spec/part'    
+import random_choice from '../spec/random_choice'    
+import random_integer from '../spec/random_integer'    
+import random_real from '../spec/random_real'    
 import range from '../spec/range'    
 import repeat from '../spec/repeat'    
 import scan from '../spec/scan'    
@@ -55,6 +58,9 @@ export default {
     nest,
     object_map,
     part,
+    random_choice,
+    random_integer,
+    random_real,
     range,
     repeat,
     scan,
