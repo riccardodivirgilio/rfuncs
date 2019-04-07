@@ -874,3 +874,13 @@ values({"a":"b","c":"d","e":"f"})
 // => ["b","d","f"]
 ```
 
+## zip
+
+*zip(array1, array2, ...)*
+ - returns [[array1[0], array2[0], ...], [array1[1], array2[1], ...], ...]
+
+```javascript
+zip([1,2,3], [4,5,6])
+// => [[1,4],[2,5],[3,6]]
+```
+

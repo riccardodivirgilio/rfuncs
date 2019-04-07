@@ -29,6 +29,7 @@ import sort from '../functions/sort'
 import sort_by from '../functions/sort_by'    
 import to_array from '../functions/to_array'    
 import values from '../functions/values'    
+import zip from '../functions/zip'    
 
 export default {
     all,
@@ -61,4 +62,5 @@ export default {
     sort_by,
     to_array,
     values,
+    zip,
 }

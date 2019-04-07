@@ -29,6 +29,7 @@ import sort from '../spec/sort'
 import sort_by from '../spec/sort_by'    
 import to_array from '../spec/to_array'    
 import values from '../spec/values'    
+import zip from '../spec/zip'    
 
 export default {
     all,
@@ -61,4 +62,5 @@ export default {
     sort_by,
     to_array,
     values,
+    zip,
 }
