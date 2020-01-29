@@ -27,6 +27,7 @@ import random_integer from '../functions/random_integer'
 import random_real from '../functions/random_real'    
 import range from '../functions/range'    
 import repeat from '../functions/repeat'    
+import riffle from '../functions/riffle'    
 import scan from '../functions/scan'    
 import sort from '../functions/sort'    
 import sort_by from '../functions/sort_by'    
@@ -63,6 +64,7 @@ export default {
     random_real,
     range,
     repeat,
+    riffle,
     scan,
     sort,
     sort_by,

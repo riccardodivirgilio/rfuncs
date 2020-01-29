@@ -27,6 +27,7 @@ import random_integer from '../spec/random_integer'
 import random_real from '../spec/random_real'    
 import range from '../spec/range'    
 import repeat from '../spec/repeat'    
+import riffle from '../spec/riffle'    
 import scan from '../spec/scan'    
 import sort from '../spec/sort'    
 import sort_by from '../spec/sort_by'    
@@ -63,6 +64,7 @@ export default {
     random_real,
     range,
     repeat,
+    riffle,
     scan,
     sort,
     sort_by,

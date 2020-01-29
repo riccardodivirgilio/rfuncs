@@ -723,6 +723,26 @@ repeat(1, 0)
 // => []
 ```
 
+## riffle
+
+*riffle(iterable, separator)*
+ - riffle separator between successive elements in a list
+
+```javascript
+riffle([1,2,3], "s")
+// => [1,"s",2,"s",3]
+```
+
+```javascript
+riffle([1], "s")
+// => [1]
+```
+
+```javascript
+riffle([], "s")
+// => []
+```
+
 ## scan
 
 ```javascript
