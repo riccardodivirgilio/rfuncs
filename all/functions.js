@@ -4,6 +4,7 @@ import any from '../functions/any'
 import apply from '../functions/apply'    
 import composition from '../functions/composition'    
 import contains from '../functions/contains'    
+import delete_duplicates from '../functions/delete_duplicates'    
 import filter from '../functions/filter'    
 import first from '../functions/first'    
 import group_by from '../functions/group_by'    
@@ -41,6 +42,7 @@ export default {
     apply,
     composition,
     contains,
+    delete_duplicates,
     filter,
     first,
     group_by,

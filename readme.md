@@ -193,6 +193,26 @@ contains(1, 1)
 // => true
 ```
 
+## delete_duplicates
+
+*delete_duplicates(iterable)*
+ - deletes all duplicates from list.
+
+```javascript
+delete_duplicates([1,1,3])
+// => [1,3]
+```
+
+```javascript
+delete_duplicates([1,7,8,4,3,4,1,9,9,2])
+// => [1,2,3,4,7,8,9]
+```
+
+```javascript
+delete_duplicates([])
+// => []
+```
+
 ## filter
 
 *filter(data, crit)*

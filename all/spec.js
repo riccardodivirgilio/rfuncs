@@ -4,6 +4,7 @@ import any from '../spec/any'
 import apply from '../spec/apply'    
 import composition from '../spec/composition'    
 import contains from '../spec/contains'    
+import delete_duplicates from '../spec/delete_duplicates'    
 import filter from '../spec/filter'    
 import first from '../spec/first'    
 import group_by from '../spec/group_by'    
@@ -41,6 +42,7 @@ export default {
     apply,
     composition,
     contains,
+    delete_duplicates,
     filter,
     first,
     group_by,
