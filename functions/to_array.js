@@ -2,6 +2,7 @@
 import is_array    from './is_array'
 import is_object   from './is_object'
 import is_iterator from './is_iterator'
+import is_element  from './is_element'
 import is_function from './is_function'
 import is_null     from './is_null'
 import values      from './values'
@@ -17,7 +18,7 @@ function _to_array(iterable) {
         }
         return array
     }
-    if (is_function(iterable)) {
+    if (is_function(iterable) || is_element(iterable)) {
         return [iterable]
     }
     if (is_object(iterable)) {

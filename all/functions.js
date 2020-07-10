@@ -9,6 +9,7 @@ import filter from '../functions/filter'
 import first from '../functions/first'    
 import group_by from '../functions/group_by'    
 import is_array from '../functions/is_array'    
+import is_element from '../functions/is_element'    
 import is_function from '../functions/is_function'    
 import is_iterator from '../functions/is_iterator'    
 import is_null from '../functions/is_null'    
@@ -47,6 +48,7 @@ export default {
     first,
     group_by,
     is_array,
+    is_element,
     is_function,
     is_iterator,
     is_null,
