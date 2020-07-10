@@ -3,6 +3,7 @@ import to_array    from './to_array'
 import keys        from './keys'
 import is_object   from './is_object'
 import is_iterator from './is_iterator'
+import is_element  from './is_element'
 
 export default function scan(f, iterable) {
     if (is_iterator(iterable)) {
@@ -11,7 +12,7 @@ export default function scan(f, iterable) {
             f(value, index)
             index ++
         }
-    } else if (is_object(iterable)) {
+    } else if (is_object(iterable) && ! is_element(iterable)) {
         keys(iterable).forEach(
             key => f(iterable[key], key)
         )

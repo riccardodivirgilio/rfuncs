@@ -14,6 +14,7 @@ import is_function from '../functions/is_function'
 import is_iterator from '../functions/is_iterator'    
 import is_null from '../functions/is_null'    
 import is_object from '../functions/is_object'    
+import is_string from '../functions/is_string'    
 import key_drop from '../functions/key_drop'    
 import key_take from '../functions/key_take'    
 import keys from '../functions/keys'    
@@ -53,6 +54,7 @@ export default {
     is_iterator,
     is_null,
     is_object,
+    is_string,
     key_drop,
     key_take,
     keys,
