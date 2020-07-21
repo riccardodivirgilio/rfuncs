@@ -1,7 +1,6 @@
-
-import to_array   from './to_array'
+import to_array from "./to_array"
 
 export default function last(any) {
-    const arr = to_array(any)
-    return arr[arr.length - 1]
+  const arr = to_array(any)
+  return arr[arr.length - 1]
 }

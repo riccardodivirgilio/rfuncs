@@ -1,9 +1,7 @@
-
 export default {
-  sections: [{
-    tests: (random_real, compare) => {
-
-
-    }
-  }]
+  sections: [
+    {
+      tests: (random_real, compare) => {},
+    },
+  ],
 }

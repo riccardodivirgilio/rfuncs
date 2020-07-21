@@ -1,2 +1,1 @@
-
-export default (data) => Object.keys(data)
+export default data => Object.keys(data)

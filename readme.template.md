@@ -3,16 +3,20 @@
 A collection of amazing functions:
 
 {{#functions}}
+
 ## {{name}}
+
 {{description}}
 {{#sections}}
 {{#usage}}
-*{{ &line }}*
- - {{ &description }}
+_{{ &line }}_
+
+- {{ &description }}
 
 {{/usage}}
 
 {{#tests}}
+
 ```javascript
 {{ &test }}
 {{#logs}}

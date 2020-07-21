@@ -1,6 +1,5 @@
-
-import to_array   from './to_array'
+import to_array from "./to_array"
 
 export default function first(any) {
-    return to_array(any)[0]
+  return to_array(any)[0]
 }

@@ -1,2 +1,1 @@
-
-export default (data) => Object.entries(data)
+export default data => Object.entries(data)

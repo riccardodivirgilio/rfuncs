@@ -1,12 +1,10 @@
-
-
-import to_array from './to_array'
+import to_array from "./to_array"
 
 export default function all(iterable, f = a => a) {
-    for (let t of to_array(iterable)) {
-        if (! f(t)) {
-            return false
-        }
+  for (let t of to_array(iterable)) {
+    if (!f(t)) {
+      return false
     }
-    return true
+  }
+  return true
 }
