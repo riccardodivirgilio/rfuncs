@@ -1,10 +1,8 @@
-import scan from "./scan"
+import map from "./map"
+import ordered_object from "../functions/ordered_object"
 
 export default function object_map(keyf, valuef, iterable) {
-  let newobj = {}
-  scan(
-    (value, key) => (newobj[keyf(value, key)] = valuef(value, key)),
-    iterable
+  return ordered_object(
+    map((value, key) => [keyf(value, key), valuef(value, key)], iterable)
   )
-  return newobj
 }

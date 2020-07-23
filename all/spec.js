@@ -21,6 +21,7 @@ import map from "../spec/map"
 import merge from "../spec/merge"
 import nest from "../spec/nest"
 import object_map from "../spec/object_map"
+import ordered_object from "../spec/ordered_object"
 import part from "../spec/part"
 import random_choice from "../spec/random_choice"
 import random_integer from "../spec/random_integer"
@@ -59,6 +60,7 @@ export default {
   merge,
   nest,
   object_map,
+  ordered_object,
   part,
   random_choice,
   random_integer,

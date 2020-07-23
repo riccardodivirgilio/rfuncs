@@ -220,7 +220,7 @@ delete_duplicates([1, 1, 3])
 
 ```javascript
 delete_duplicates([1, 7, 8, 4, 3, 4, 1, 9, 9, 2])
-// => [1,2,3,4,7,8,9]
+// => [1,7,8,4,3,9,2]
 ```
 
 ```javascript
@@ -644,6 +644,11 @@ merge({ a: 1 }, { b: 2 }, { c: 3 })
 // => {"a":1,"b":2,"c":3}
 ```
 
+```javascript
+merge({ a: 1, b: 2 }, { b: 3 })
+// => {"a":1,"b":3}
+```
+
 ## nest
 
 ```javascript
@@ -706,6 +711,30 @@ object_map(
   {}
 )
 // => {"1":3,"2":4}
+```
+
+## ordered_object
+
+```javascript
+ordered_object([["a", 2]])
+// => {"a":2}
+```
+
+```javascript
+ordered_object([
+  ["z", 2],
+  ["b", 3],
+])
+// => {"z":2,"b":3}
+```
+
+```javascript
+ordered_object([
+  ["z", 2],
+  ["b", 3],
+  ["b", 4],
+])
+// => {"z":2,"b":4}
 ```
 
 ## part

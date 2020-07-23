@@ -24,7 +24,9 @@ import map from "../functions/map"
 import merge from "../functions/merge"
 import nest from "../functions/nest"
 import object_map from "../functions/object_map"
+import ordered_object from "../functions/ordered_object"
 import part from "../functions/part"
+import partial from "../functions/partial"
 import random_choice from "../functions/random_choice"
 import random_integer from "../functions/random_integer"
 import random_real from "../functions/random_real"
@@ -65,7 +67,9 @@ export default {
   merge,
   nest,
   object_map,
+  ordered_object,
   part,
+  partial,
   random_choice,
   random_integer,
   random_real,

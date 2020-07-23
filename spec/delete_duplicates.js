@@ -12,12 +12,12 @@ export default {
         compare(delete_duplicates([1, 1, 3]), [1, 3])
         compare(delete_duplicates([1, 7, 8, 4, 3, 4, 1, 9, 9, 2]), [
           1,
-          2,
-          3,
-          4,
           7,
           8,
+          4,
+          3,
           9,
+          2,
         ])
         compare(delete_duplicates([]), [])
       },
