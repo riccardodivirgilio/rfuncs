@@ -27,9 +27,8 @@ export default function ordered_object(iterable) {
   let keys = []
   scan(i => {
     const k = i[0] + ""
-    const v = i[1]
 
-    obj[k] = v
+    obj[k] = i[1]
 
     if (keys.indexOf(k) < 0) {
       keys.push(k)
