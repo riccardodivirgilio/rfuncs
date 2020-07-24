@@ -7,9 +7,5 @@ export default function zip() {
           return a.length < b.length ? a : b
         })
 
-  return shortest.map(function (_, i) {
-    return args.map(function (array) {
-      return array[i]
-    })
-  })
+  return shortest.map((_, i) => args.map(array => array[i]))
 }
