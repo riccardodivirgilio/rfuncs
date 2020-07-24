@@ -34,6 +34,5 @@ export default function to_array() {
     return _to_array(arguments[0])
   }
   return _to_array(arguments)
-    .map(_to_array)
-    .reduce((a, b) => a.concat(b), [])
+    .reduce((a, b) => a.concat(_to_array(b)), [])
 }
