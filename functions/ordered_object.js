@@ -3,9 +3,7 @@ import partial from "./partial"
 
 const set = (keys, obj, prop, value) => {
   prop = prop + ""
-
-  const i = keys.indexOf(prop)
-  if (i >= 0) {
+  if (keys.indexOf(prop) < 0) {
     keys.push(prop)
   }
   obj[prop] = value
