@@ -1,6 +1,6 @@
 {
   "name": "rfuncs",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Functional tools for Javascript",
   "keywords": [
     "es2015",
@@ -18,24 +18,12 @@
   "repository": "riccardodivirgilio/rfuncs",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
-    "coverage": "nyc --reporter=lcov --reporter=text npm test",
     "prepublish": "npm test"
   },
-  "dependencies": {
-    "babel-polyfill": "^6.16.0",
-    "babel-runtime": "^6.11.6",
-    "core-js": "^2.4.1"
-  },
   "devDependencies": {
-    "babel-cli": "^6.16.0",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-latest": "^6.16.0",
     "babel-preset-latest-minimal": "^1.1.2",
-    "babel-register": "^6.16.3",
-    "chai": "^4.0.0",
-    "eslint": "^4.1.0",
+    "babel-register": "^6.26.0",
     "mocha": "^3.1.2",
-    "nyc": "^11.0.0",
     "mustache": "^2.3.0"
   }
 }
