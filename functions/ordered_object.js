@@ -20,7 +20,7 @@ const deleteProperty = (keys, obj, prop) => {
   return true
 }
 
-export default function ordered_object(iterable) {
+export default function ordered_object(iterable = []) {
   let obj = {}
   let keys = []
   scan(i => {
