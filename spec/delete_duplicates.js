@@ -15,6 +15,10 @@ export default {
                     [1, 7, 8, 4, 3, 9, 2]
                 )
                 compare(delete_duplicates([]), [])
+
+                compare(delete_duplicates([{a: 2, b:3}, {a: 2}], 'a'), [{a:2}])
+
+                compare(delete_duplicates([{a: 2, b:3}, {a: 2}], o => o.a), [{a:2}])
             },
         },
     ],

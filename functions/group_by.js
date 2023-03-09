@@ -4,6 +4,7 @@ import is_mapping from "./is_mapping"
 import map from "./map"
 import ordered_object from "./ordered_object"
 import scan from "./scan"
+import getter from "./getter"
 
 const array_assigner = (result, grouper, k, v) => {
     if (!result[grouper]) {
@@ -21,10 +22,10 @@ const mapping_assigner = (result, grouper, k, v) => {
 
 export default function group_by(iterable, f = identity, merger = null) {
     const assigner = is_mapping(iterable) ? mapping_assigner : array_assigner
-    const getter = is_function(f) ? f : v => v[f]
+    const grouping = getter(f)
     const result = ordered_object()
 
-    scan((v, k) => assigner(result, getter(v, k), k, v), iterable)
+    scan((v, k) => assigner(result, grouping(v, k), k, v), iterable)
 
     if (merger) {
         return map(merger, result)

@@ -1,8 +1,12 @@
 import to_array from "./to_array"
+import getter from "./getter"
 
-export default function all(iterable, f = a => a) {
+export default function all(iterable, f) {
+
+    const g = getter(f)
+
     for (let t of to_array(iterable)) {
-        if (!f(t)) {
+        if (!g(t)) {
             return false
         }
     }
