@@ -17,12 +17,12 @@ function find(folder) {
     ).sort((a, b) => (a < b ? -1 : 1))
 }
 
-const t = fs.readFileSync(path.join(__dirname, "..", "all.template.js"), "utf8")
+const t = fs.readFileSync(path.join(__dirname, "..", "all.template"), "utf8")
 
 scan(
     name =>
         template_to_file(
-            path.join(__dirname, "..", "all.template.js"),
+            path.join(__dirname, "..", "all.template"),
             path.join(__dirname, "..", "all", name + ".js"),
             { names: find(name), path: "../" + name }
         ),
