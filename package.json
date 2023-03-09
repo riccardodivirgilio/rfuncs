@@ -23,7 +23,7 @@
   "devDependencies": {
     "babel-preset-latest-minimal": "^1.1.2",
     "babel-register": "^6.26.0",
-    "mocha": "^3.1.2",
-    "mustache": "^2.3.0"
+    "mocha": "^3.5.3",
+    "mustache": "^2.3.2"
   }
 }
