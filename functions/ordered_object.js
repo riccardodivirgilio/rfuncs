@@ -32,6 +32,7 @@ export default function ordered_object(iterable = []) {
             keys.push(k)
         }
     }, iterable)
+    // eslint-disable-next-line no-undef
     return new Proxy(obj, {
         set: partial(set, keys),
         deleteProperty: partial(deleteProperty, keys),
