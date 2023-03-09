@@ -6,7 +6,7 @@ A collection of amazing functions:
 
 _all(array)_
 
-- Returns `true` if all values in the array are true
+-   Returns `true` if all values in the array are true
 
 ```javascript
 all()
@@ -35,7 +35,7 @@ all([true,false])
 
 _all(array, func)_
 
-- Returns `true` if all values in the array are true when applied to func
+-   Returns `true` if all values in the array are true when applied to func
 
 ```javascript
 all(4, i => i <= 4)
@@ -61,7 +61,7 @@ all([2,4], i => i <= 4)
 
 _any(array)_
 
-- Returns `true` if at least one in the values in the array is true
+-   Returns `true` if at least one in the values in the array is true
 
 ```javascript
 any()
@@ -90,7 +90,7 @@ any([true,false])
 
 _any(array, func)_
 
-- Returns `true` if at least one in the values in the array is true when applied to func
+-   Returns `true` if at least one in the values in the array is true when applied to func
 
 ```javascript
 any(4, i => i <= 4)
@@ -121,7 +121,7 @@ any([2,4], i => i <= 1)
 
 _apply(f, [val₁, val₂, val₃, …])_
 
-- returns f(val₁, val₂, val₃, …)
+-   returns f(val₁, val₂, val₃, …)
 
 ```javascript
 apply(a => a + 2, 1)
@@ -147,7 +147,7 @@ apply((a, b, c) => a + b + c, [1,2,3])
 
 _composition(f₁, f₂, f₃, …)_
 
-- returns a composition of the functions f₁, f₂, f₃, …
+-   returns a composition of the functions f₁, f₂, f₃, …
 
 ```javascript
 composition()(4)
@@ -173,7 +173,7 @@ composition(a => a + 2, a => a * 3, a => a / 2)(4)
 
 _contains(data, value)_
 
-- returns `true` if value is contained in data
+-   returns `true` if value is contained in data
 
 ```javascript
 contains([1,2,3], 2)
@@ -204,7 +204,7 @@ contains(1, 1)
 
 _delete_duplicates(iterable)_
 
-- deletes all duplicates from list.
+-   deletes all duplicates from list.
 
 ```javascript
 delete_duplicates([1,1,3])
@@ -225,7 +225,7 @@ delete_duplicates([])
 
 _filter(data, crit)_
 
-- picks out all elements xₑ of data for which crit(data[e], e) is True
+-   picks out all elements xₑ of data for which crit(data[e], e) is True
 
 ```javascript
 filter(v => v < 3, [1,2,3])
@@ -325,7 +325,7 @@ group_by([1,1,2,2,3], v => v, array => array.reduce((a, b) => a + b, 0))
 
 _identity(val)_
 
-- gives val (the identity operation)
+-   gives val (the identity operation)
 
 ```javascript
 identity()
@@ -846,7 +846,7 @@ repeat(1, 0)
 
 _riffle(iterable, separator)_
 
-- riffle separator between successive elements in a list
+-   riffle separator between successive elements in a list
 
 ```javascript
 riffle([1,2,3], "s")
@@ -1024,7 +1024,7 @@ values({"a":"b","c":"d","e":"f"})
 
 _zip(array1, array2, ...)_
 
-- returns [[array1[0], array2[0], ...], [array1[1], array2[1], ...], ...]
+-   returns [[array1[0], array2[0], ...], [array1[1], array2[1], ...], ...]
 
 ```javascript
 zip([1,2,3], [4,5,6])

@@ -1,4 +1,4 @@
 export default function* test_iterator() {
-  yield 1
-  yield 2
+    yield 1
+    yield 2
 }
