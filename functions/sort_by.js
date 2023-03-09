@@ -1,10 +1,8 @@
-import identity from "./identity"
-import is_function from "./is_function"
-import map from "./map"
-import sort from "./sort"
 import getter from "./getter"
-import zip from "./zip"
+import identity from "./identity"
+import sort from "./sort"
 import to_array from "./to_array"
+import zip from "./zip"
 
 export default function sort_by(iterable, functions = identity) {
     const getters = getter(to_array(functions))

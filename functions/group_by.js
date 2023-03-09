@@ -1,10 +1,9 @@
+import getter from "./getter"
 import identity from "./identity"
-import is_function from "./is_function"
 import is_mapping from "./is_mapping"
 import map from "./map"
 import ordered_object from "./ordered_object"
 import scan from "./scan"
-import getter from "./getter"
 
 const array_assigner = (result, grouper, k, v) => {
     if (!result[grouper]) {

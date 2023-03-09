@@ -1,8 +1,8 @@
+import getter from "./getter"
 import is_object from "./is_object"
 import items from "./items"
 import ordered_object from "./ordered_object"
 import to_array from "./to_array"
-import getter from "./getter"
 
 export default function filter(f, iterable) {
     // we want to return a new object if iterable is an object

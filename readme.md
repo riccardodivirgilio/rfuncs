@@ -228,6 +228,16 @@ delete_duplicates([])
 // => []
 ```
 
+```javascript
+delete_duplicates([{ a: 2, b: 3 }, { a: 2 }], "a")
+// => [{"a":2}]
+```
+
+```javascript
+delete_duplicates([{ a: 2, b: 3 }, { a: 2 }], o => o.a)
+// => [{"a":2}]
+```
+
 ## filter
 
 _filter(data, crit)_
@@ -289,6 +299,43 @@ first([1, 2, 3])
 ```javascript
 first({ a: 1, b: 2 })
 // => 1
+```
+
+## getter
+
+```javascript
+getter()({ a: 2 })
+// => {"a":2}
+```
+
+```javascript
+getter("a")({ a: 2 })
+// => 2
+```
+
+```javascript
+getter(["a", "b"])({ a: 2, b: 3 })
+// => [2,3]
+```
+
+```javascript
+getter({ x: "a", z: "b" })({ a: 2, b: 3 })
+// => {"x":2,"z":3}
+```
+
+```javascript
+getter(a => a + 2)(0)
+// => 2
+```
+
+```javascript
+getter([null, null])(0)
+// => [2,4]
+```
+
+```javascript
+getter({})(0)
+// => {"a":2,"b":4}
 ```
 
 ## group_by

@@ -6,6 +6,7 @@ import contains from "../spec/contains"
 import delete_duplicates from "../spec/delete_duplicates"
 import filter from "../spec/filter"
 import first from "../spec/first"
+import getter from "../spec/getter"
 import group_by from "../spec/group_by"
 import identity from "../spec/identity"
 import is_array from "../spec/is_array"
@@ -47,6 +48,7 @@ export default {
     delete_duplicates,
     filter,
     first,
+    getter,
     group_by,
     identity,
     is_array,

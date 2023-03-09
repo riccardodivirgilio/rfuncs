@@ -6,6 +6,7 @@ import contains from "../functions/contains"
 import delete_duplicates from "../functions/delete_duplicates"
 import filter from "../functions/filter"
 import first from "../functions/first"
+import getter from "../functions/getter"
 import group_by from "../functions/group_by"
 import identity from "../functions/identity"
 import is_array from "../functions/is_array"
@@ -14,6 +15,7 @@ import is_function from "../functions/is_function"
 import is_iterator from "../functions/is_iterator"
 import is_mapping from "../functions/is_mapping"
 import is_null from "../functions/is_null"
+import is_number from "../functions/is_number"
 import is_object from "../functions/is_object"
 import is_string from "../functions/is_string"
 import items from "../functions/items"
@@ -51,6 +53,7 @@ export default {
     delete_duplicates,
     filter,
     first,
+    getter,
     group_by,
     identity,
     is_array,
@@ -59,6 +62,7 @@ export default {
     is_iterator,
     is_mapping,
     is_null,
+    is_number,
     is_object,
     is_string,
     items,
