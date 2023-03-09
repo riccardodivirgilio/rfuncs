@@ -19,7 +19,7 @@
     "scripts": {
         "test": "mocha --compilers js:babel-register",
         "prepublish": "npm test",
-        "lint": "prettier . --write --no-semi --tab-width 4 --arrow-parens avoid && eslint --fix --ext .js"
+        "lint": "prettier . --write --no-semi --tab-width 4 --arrow-parens avoid && eslint functions/ --fix --ext .js"
     },
     "devDependencies": {
         "babel-preset-latest-minimal": "^1.1.2",
