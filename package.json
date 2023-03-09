@@ -1,29 +1,34 @@
 {
-  "name": "rfuncs",
-  "version": "1.4.0",
-  "description": "Functional tools for Javascript",
-  "keywords": [
-    "es2015",
-    "es5",
-    "es6",
-    "node",
-    "npm",
-    "package",
-    "functional",
-    "functions"
-  ],
-  "license": "WTFPL",
-  "author": "Riccardo Di Virgilio <riccardodivirgilio@gmail.com>",
-  "main": "dist/index.js",
-  "repository": "riccardodivirgilio/rfuncs",
-  "scripts": {
-    "test": "mocha --compilers js:babel-register",
-    "prepublish": "npm test"
-  },
-  "devDependencies": {
-    "babel-preset-latest-minimal": "^1.1.2",
-    "babel-register": "^6.26.0",
-    "mocha": "^3.5.3",
-    "mustache": "^2.3.2"
-  }
+    "name": "rfuncs",
+    "version": "1.4.0",
+    "description": "Functional tools for Javascript",
+    "keywords": [
+        "es2015",
+        "es5",
+        "es6",
+        "node",
+        "npm",
+        "package",
+        "functional",
+        "functions"
+    ],
+    "license": "WTFPL",
+    "author": "Riccardo Di Virgilio <riccardodivirgilio@gmail.com>",
+    "main": "dist/index.js",
+    "repository": "riccardodivirgilio/rfuncs",
+    "scripts": {
+        "test": "mocha --compilers js:babel-register",
+        "prepublish": "npm test",
+        "lint": "prettier . --write --no-semi --tab-width 4 --arrow-parens avoid && eslint ./** --fix --ext .js"
+    },
+    "devDependencies": {
+        "babel-preset-latest-minimal": "^1.1.2",
+        "babel-register": "^6.26.0",
+        "mocha": "^3.5.3",
+        "mustache": "^2.3.2",
+        "eslint": "^8.32.0",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "prettier": "^2.8.3"
+    }
 }
