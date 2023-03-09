@@ -8,6 +8,7 @@ import delete_duplicates from '../functions/delete_duplicates'
 import filter from '../functions/filter'    
 import first from '../functions/first'    
 import group_by from '../functions/group_by'    
+import identity from '../functions/identity'    
 import is_array from '../functions/is_array'    
 import is_element from '../functions/is_element'    
 import is_function from '../functions/is_function'    
@@ -51,6 +52,7 @@ export default {
     filter,
     first,
     group_by,
+    identity,
     is_array,
     is_element,
     is_function,

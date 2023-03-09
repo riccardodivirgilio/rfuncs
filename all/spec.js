@@ -8,6 +8,7 @@ import delete_duplicates from '../spec/delete_duplicates'
 import filter from '../spec/filter'    
 import first from '../spec/first'    
 import group_by from '../spec/group_by'    
+import identity from '../spec/identity'    
 import is_array from '../spec/is_array'    
 import is_function from '../spec/is_function'    
 import is_iterator from '../spec/is_iterator'    
@@ -48,6 +49,7 @@ export default {
     filter,
     first,
     group_by,
+    identity,
     is_array,
     is_function,
     is_iterator,
