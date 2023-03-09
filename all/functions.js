@@ -12,6 +12,7 @@ import is_array from "../functions/is_array"
 import is_element from "../functions/is_element"
 import is_function from "../functions/is_function"
 import is_iterator from "../functions/is_iterator"
+import is_mapping from "../functions/is_mapping"
 import is_null from "../functions/is_null"
 import is_object from "../functions/is_object"
 import is_string from "../functions/is_string"
@@ -56,6 +57,7 @@ export default {
     is_element,
     is_function,
     is_iterator,
+    is_mapping,
     is_null,
     is_object,
     is_string,
