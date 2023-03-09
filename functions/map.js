@@ -6,14 +6,18 @@ import is_element from "./is_element"
 import items from "./items"
 import ordered_object from "./ordered_object"
 
+export function object_switch(iterable) {
+  return is_object(iterable) &&
+    !is_iterator(iterable) &&
+    !is_function(iterable) &&
+    !is_element(iterable)
+}
+
 export default function map(f, iterable) {
   // we want to return a new object if iterable is an object
 
   if (
-    is_object(iterable) &&
-    !is_iterator(iterable) &&
-    !is_function(iterable) &&
-    !is_element(iterable)
+    object_switch(iterable)
   ) {
     return ordered_object(items(iterable).map(a => [a[0], f(a[1], a[0])]))
   }
