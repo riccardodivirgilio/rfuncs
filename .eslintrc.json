@@ -1,11 +1,22 @@
+
 {
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaVersion": 6
-    },
+    "root": true,
     "env": {
-        "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended"
+    "plugins": ["eslint-plugin-unused-imports", "eslint-plugin-simple-import-sort"],
+
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+
+        "unused-imports/no-unused-imports": "error",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+
+        "no-unused-vars": "warn",
+        "no-empty": "warn"
+
+    }
 }
