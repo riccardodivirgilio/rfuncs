@@ -1,5 +1,5 @@
 import map from "./map"
-import ordered_object from "../functions/ordered_object"
+import ordered_object from "./ordered_object"
 
 export default function object_map(keyf, valuef, iterable) {
   return ordered_object(

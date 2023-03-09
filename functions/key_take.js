@@ -1,6 +1,6 @@
 import is_null from "./is_null"
 import scan from "./scan"
-import ordered_object from "../functions/ordered_object"
+import ordered_object from "./ordered_object"
 
 export default function key_take(data, to_take, default_value = undefined) {
   if (is_null(to_take)) {

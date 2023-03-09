@@ -1,5 +1,5 @@
 
-import scan from '../functions/scan' 
+import scan from './scan' 
 
 export default function items(...args) {
     const res = []

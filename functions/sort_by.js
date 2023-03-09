@@ -1,8 +1,10 @@
 import is_function from "./is_function"
 import map from "./map"
 import sort from "./sort"
+import identity from "./identity"
 
-export default function sort_by(iterable, functions = a => a) {
+
+export default function sort_by(iterable, functions = identity) {
   const getters = map(f => (is_function(f) ? f : v => v[f]), functions)
 
   function compare(a, b) {
