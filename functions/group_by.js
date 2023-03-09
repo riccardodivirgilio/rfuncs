@@ -1,9 +1,7 @@
 import identity from "./identity"
 import is_function from "./is_function"
-import is_iterator from "./is_iterator"
-import is_object from "./is_object"
-import map from "./map"
 import is_mapping from "./is_mapping"
+import map from "./map"
 import ordered_object from "./ordered_object"
 import scan from "./scan"
 
