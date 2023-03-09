@@ -24,11 +24,11 @@
     "devDependencies": {
         "babel-preset-latest-minimal": "^1.1.2",
         "babel-register": "^6.26.0",
-        "mocha": "^3.5.3",
-        "mustache": "^2.3.2",
-        "eslint": "^8.32.0",
+        "eslint": "^8.35.0",
         "eslint-plugin-simple-import-sort": "^10.0.0",
         "eslint-plugin-unused-imports": "^2.0.0",
-        "prettier": "^2.8.3"
+        "mocha": "^3.5.3",
+        "mustache": "^2.3.2",
+        "prettier": "^2.8.4"
     }
 }
