@@ -1,6 +1,6 @@
 {
     "name": "rfuncs",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "Functional tools for Javascript",
     "keywords": [
         "es2015",
@@ -15,20 +15,23 @@
     "license": "WTFPL",
     "author": "Riccardo Di Virgilio <riccardodivirgilio@gmail.com>",
     "main": "dist/index.js",
-    "repository": "riccardodivirgilio/rfuncs",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/riccardodivirgilio/rfuncs.git"
+    },
     "scripts": {
-        "test": "mocha --compilers js:babel-register",
+        "test": "mocha --require babel-register",
         "prepublish": "npm test",
         "lint": "prettier . --write --no-semi --tab-width 4 --arrow-parens avoid && eslint functions/ --fix --ext .js"
     },
     "devDependencies": {
         "babel-preset-latest-minimal": "^1.1.2",
         "babel-register": "^6.26.0",
-        "eslint": "^8.35.0",
-        "eslint-plugin-simple-import-sort": "^10.0.0",
-        "eslint-plugin-unused-imports": "^2.0.0",
-        "mocha": "^3.5.3",
-        "mustache": "^2.3.2",
-        "prettier": "^2.8.4"
+        "eslint": "^9.17.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "mocha": "^11.0.1",
+        "mustache": "^4.2.0",
+        "prettier": "^3.4.2"
     }
 }

@@ -11,7 +11,7 @@ A collection of amazing functions:
 {{#usage}}
 _{{ &line }}_
 
--   {{ &description }}
+- {{ &description }}
 
 {{/usage}}
 
