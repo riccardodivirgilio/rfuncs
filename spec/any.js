@@ -30,24 +30,24 @@ export default {
             tests: (any, compare) => {
                 compare(
                     any(4, i => i <= 4),
-                    true
+                    true,
                 )
                 compare(
                     any(4, i => i > 4),
-                    false
+                    false,
                 )
 
                 compare(
                     any([2, 4], i => i <= 2),
-                    true
+                    true,
                 )
                 compare(
                     any([2, 4], i => i <= 4),
-                    true
+                    true,
                 )
                 compare(
                     any([2, 4], i => i <= 1),
-                    false
+                    false,
                 )
             },
         },

@@ -12,8 +12,8 @@ function find(folder) {
         name => "" + path.basename(name, ".js"),
         filter(
             name => path.extname(name) == ".js",
-            fs.readdirSync(path.join(__dirname, "..", folder))
-        )
+            fs.readdirSync(path.join(__dirname, "..", folder)),
+        ),
     ).sort((a, b) => (a < b ? -1 : 1))
 }
 
@@ -24,7 +24,7 @@ scan(
         template_to_file(
             path.join(__dirname, "..", "all.template"),
             path.join(__dirname, "..", "all", name + ".js"),
-            { names: find(name), path: "../" + name }
+            { names: find(name), path: "../" + name },
         ),
-    ["functions", "spec"]
+    ["functions", "spec"],
 )

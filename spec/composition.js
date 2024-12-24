@@ -14,17 +14,17 @@ export default {
                 compare(
                     composition(
                         a => a + 2,
-                        a => a * 3
+                        a => a * 3,
                     )(4),
-                    18
+                    18,
                 )
                 compare(
                     composition(
                         a => a + 2,
                         a => a * 3,
-                        a => a / 2
+                        a => a / 2,
                     )(4),
-                    9
+                    9,
                 )
             },
         },

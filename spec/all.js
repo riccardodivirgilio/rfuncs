@@ -30,20 +30,20 @@ export default {
             tests: (all, compare) => {
                 compare(
                     all(4, i => i <= 4),
-                    true
+                    true,
                 )
                 compare(
                     all(4, i => i > 4),
-                    false
+                    false,
                 )
 
                 compare(
                     all([2, 4], i => i <= 2),
-                    false
+                    false,
                 )
                 compare(
                     all([2, 4], i => i <= 4),
-                    true
+                    true,
                 )
             },
         },

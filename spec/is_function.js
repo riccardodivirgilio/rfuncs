@@ -11,11 +11,11 @@ export default {
                 compare(is_function(undefined), false)
                 compare(
                     is_function(() => 1),
-                    true
+                    true,
                 )
                 compare(
                     is_function(function () {}),
-                    true
+                    true,
                 )
             },
         },

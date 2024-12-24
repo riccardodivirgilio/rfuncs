@@ -8,21 +8,21 @@ export default {
                 compare(sort(arr), [1, 2, 3])
                 compare(
                     sort(arr, (a, b) => a > b),
-                    [1, 2, 3]
+                    [1, 2, 3],
                 )
                 compare(
                     sort(arr, (a, b) => a < b),
-                    [3, 2, 1]
+                    [3, 2, 1],
                 )
 
                 compare(sort(obj), [1, 2, 3])
                 compare(
                     sort(obj, (a, b) => a > b),
-                    [1, 2, 3]
+                    [1, 2, 3],
                 )
                 compare(
                     sort(obj, (a, b) => a < b),
-                    [3, 2, 1]
+                    [3, 2, 1],
                 )
 
                 // checking that we didn't modify original data

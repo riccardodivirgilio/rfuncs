@@ -11,7 +11,7 @@ const runner = function () {
                         section.tests(_[name], compare.as_json)
                     }
                 }),
-            spec.sections
+            spec.sections,
         )
     }, spec)
 }

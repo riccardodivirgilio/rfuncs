@@ -13,10 +13,10 @@ export default {
                         object_map(
                             k => k + 2,
                             k => k,
-                            [1, 2, 3]
-                        )
+                            [1, 2, 3],
+                        ),
                     ),
-                    true
+                    true,
                 )
                 compare(is_object(null), false)
                 compare(is_object(undefined), false)

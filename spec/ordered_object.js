@@ -9,7 +9,7 @@ export default {
                         ["z", 2],
                         ["b", 3],
                     ]),
-                    { z: 2, b: 3 }
+                    { z: 2, b: 3 },
                 )
 
                 compare(
@@ -18,7 +18,7 @@ export default {
                         ["b", 3],
                         ["b", 4],
                     ]),
-                    { z: 2, b: 4 }
+                    { z: 2, b: 4 },
                 )
             },
         },

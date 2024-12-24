@@ -12,7 +12,7 @@ export default {
                 compare(delete_duplicates([1, 1, 3]), [1, 3])
                 compare(
                     delete_duplicates([1, 7, 8, 4, 3, 4, 1, 9, 9, 2]),
-                    [1, 7, 8, 4, 3, 9, 2]
+                    [1, 7, 8, 4, 3, 9, 2],
                 )
                 compare(delete_duplicates([]), [])
 
@@ -22,7 +22,7 @@ export default {
 
                 compare(
                     delete_duplicates([{ a: 2, b: 3 }, { a: 2 }], o => o.a),
-                    [{ a: 2 }]
+                    [{ a: 2 }],
                 )
             },
         },

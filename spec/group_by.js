@@ -12,7 +12,7 @@ export default {
 
                 compare(
                     group_by([{ a: 2 }, { a: 3 }, { a: 2, b: 4 }], v => v.a),
-                    { 2: [{ a: 2 }, { a: 2, b: 4 }], 3: [{ a: 3 }] }
+                    { 2: [{ a: 2 }, { a: 2, b: 4 }], 3: [{ a: 3 }] },
                 )
             },
         },
@@ -28,23 +28,23 @@ export default {
                 compare(
                     group_by(
                         { x: { a: 2 }, y: { a: 3 }, z: { a: 2, b: 4 } },
-                        "a"
+                        "a",
                     ),
                     {
                         2: { x: { a: 2 }, z: { a: 2, b: 4 } },
                         3: { y: { a: 3 } },
-                    }
+                    },
                 )
 
                 compare(
                     group_by(
                         { x: { a: 2 }, y: { a: 3 }, z: { a: 2, b: 4 } },
-                        v => v.a
+                        v => v.a,
                     ),
                     {
                         2: { x: { a: 2 }, z: { a: 2, b: 4 } },
                         3: { y: { a: 3 } },
-                    }
+                    },
                 )
             },
         },
@@ -56,9 +56,9 @@ export default {
                     group_by(
                         [1, 1, 2, 2, 3],
                         v => v,
-                        array => array.reduce((a, b) => a + b, 0)
+                        array => array.reduce((a, b) => a + b, 0),
                     ),
-                    { 1: 2, 2: 4, 3: 3 }
+                    { 1: 2, 2: 4, 3: 3 },
                 )
             },
         },

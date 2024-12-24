@@ -33,7 +33,7 @@ function collect(name, section) {
 
     if (!section.docs_skip && section.tests) {
         section.tests(serializer(name), (a, b) =>
-            results.push({ test: a.payload, result: serialize(b), logs: [] })
+            results.push({ test: a.payload, result: serialize(b), logs: [] }),
         )
     }
 
@@ -49,16 +49,16 @@ const context = {
                     sections: map(
                         section =>
                             merge(section, { tests: collect(name, section) }),
-                        spec.sections
+                        spec.sections,
                     ),
                 }),
-            specs
-        )
+            specs,
+        ),
     ),
 }
 
 template_to_file(
     path.join(__dirname, "..", "readme.template.md"),
     path.join(__dirname, "..", "readme.md"),
-    context
+    context,
 )

@@ -4,15 +4,15 @@ export default {
             tests: (nest, compare) => {
                 compare(
                     nest(s => s + "b", "a", 0),
-                    "a"
+                    "a",
                 )
                 compare(
                     nest(s => s + "b", "a", 1),
-                    "ab"
+                    "ab",
                 )
                 compare(
                     nest(s => s + "b", "a", 5),
-                    "abbbbb"
+                    "abbbbb",
                 )
             },
         },

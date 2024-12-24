@@ -16,6 +16,6 @@ export default function part(data) {
             data_list
                 .map(d => select(d, keys))
                 .reduce((a, b) => to_array(a, b)),
-        [data]
+        [data],
     )
 }

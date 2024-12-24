@@ -16,7 +16,7 @@ export default function choice(array, choices) {
     for (let i = 1; i <= max; i += 1) {
         scan(
             e => results.push(e),
-            copy.splice(random_integer(0, length(copy) - 1), 1)
+            copy.splice(random_integer(0, length(copy) - 1), 1),
         )
     }
     return results
