@@ -1,6 +1,7 @@
 {
     "name": "rfuncs",
     "version": "1.4.4",
+    "type": "module",
     "description": "Functional tools for Javascript",
     "keywords": [
         "es2015",
