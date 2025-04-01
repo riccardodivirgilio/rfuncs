@@ -1,41 +1,27 @@
-import partial from "./partial"
-import scan from "./scan"
+import partial from "./partial";
+import scan from "./scan";
+import is_string from "./is_string";
 
-const set = (keys, obj, prop, value) => {
-    prop = prop + ""
-    if (keys.indexOf(prop) < 0) {
-        keys.push(prop)
-    }
-    obj[prop] = value
-    return true
-}
-
-const deleteProperty = (keys, obj, prop) => {
-    prop = prop + ""
-    const i = keys.indexOf(prop)
-    if (i >= 0) {
-        keys.splice(i, 1)
-    }
-    delete obj[prop]
-    return true
-}
+const tostr = prop => is_string(prop) ? prop : prop + ""
 
 export default function ordered_object(iterable = []) {
-    let obj = {}
-    let keys = []
-    scan(i => {
-        const k = i[0] + ""
+    const map = new Map()
 
-        obj[k] = i[1]
+    scan(([prop, value]) => map.set(tostr(prop), value), iterable);
 
-        if (keys.indexOf(k) < 0) {
-            keys.push(k)
-        }
-    }, iterable)
-    // eslint-disable-next-line no-undef
-    return new Proxy(obj, {
-        set: partial(set, keys),
-        deleteProperty: partial(deleteProperty, keys),
-        ownKeys: () => keys,
-    })
+    const handler = {
+        set: (_, prop, value) => map.set(tostr(prop), value),
+        deleteProperty: (_, prop) => map.delete(tostr(prop)),
+        ownKeys: () => Array.from(map.keys()),
+        get: (_, prop) => {
+            if (prop === "clone") return () => ordered_object(Array.from(map.entries()));
+            if (prop === Symbol.iterator) return function* () { yield* map.entries(); };
+            return map.get(tostr(prop));
+        },
+        has: (_, prop) => map.has(tostr(prop)),
+        getOwnPropertyDescriptor: (_, prop) =>
+            map.has(tostr(prop)) ? { enumerable: true, configurable: true } : undefined,
+    };
+
+    return new Proxy({}, handler);
 }
