@@ -5,6 +5,7 @@ import apply from '../functions/apply'
 import composition from '../functions/composition'    
 import contains from '../functions/contains'    
 import delete_duplicates from '../functions/delete_duplicates'    
+import echo from '../functions/echo'    
 import filter from '../functions/filter'    
 import first from '../functions/first'    
 import getter from '../functions/getter'    
@@ -52,6 +53,7 @@ export default {
     composition,
     contains,
     delete_duplicates,
+    echo,
     filter,
     first,
     getter,
